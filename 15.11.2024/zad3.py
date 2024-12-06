@@ -172,7 +172,7 @@ def run_test_harness():
         steps_per_epoch=steps_per_epoch,
         validation_data=test_it,
         validation_steps=validation_steps,
-        epochs=24,
+        epochs=5,
         verbose=1,
         callbacks=[checkpoint]  
     )
@@ -199,7 +199,7 @@ def run_test_harness():
     for i in range(min(5, len(errors))): 
         idx = errors[i]
         img_path = test_it.filepaths[idx]
-        img = image.load_img(img_path, target_size=(150, 150))
+        img = image.load_img(img_path, target_size=(40, 40))
         plt.imshow(img)
         plt.title(f"Prawda: {class_labels[true_classes[idx]]}, Przewidziane: {class_labels[predicted_classes[idx]]}")
         plt.axis('off')
