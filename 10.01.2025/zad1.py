@@ -1,5 +1,7 @@
 #from nltk.book import *
-#text1.concordance("nature.txt")
+#text1.concordance("nature.txt")'
+import nltk
+nltk.download("punkt_tab")
 import pandas as pd
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer

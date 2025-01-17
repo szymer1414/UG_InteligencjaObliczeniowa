@@ -2,9 +2,9 @@ import praw
 
 # Create a Reddit instance
 reddit = praw.Reddit(
-    client_id="",
-    client_secret="",
-    user_agent=""
+    client_id="wgLER6y-FS37eVwopxrapA",
+    client_secret="uywwh4_kF8tFZWUSQ6KWvkHY35k_xw",
+    user_agent="Old-Tell-7733"
 )
 #wgLER6y-FS37eVwopxrapA uywwh4_kF8tFZWUSQ6KWvkHY35k_xw Old-Tell-7733
 # Get the most recent 100 posts from r/civ
