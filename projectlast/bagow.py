@@ -19,7 +19,7 @@ def preprocess_text(text):
     tokens = word_tokenize(text.lower())
     
     # Define stop words
-    custom_stop_words = ['et', 'al', 'also', 'tmn', 'fig', 'b','im']
+    custom_stop_words = ['et', 'al', 'also', 'tmn', 'fig', 'b','im','didnt','doesnt','got','make','dont','cant','couldnt','wouldnt','shouldnt','isnt','arent','wasnt','werent','havent','hasnt','hadnt','wont']
     stop_words = set(stopwords.words('english'))
     stop_words.update(custom_stop_words)
     
